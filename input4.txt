@@ -1,0 +1,26 @@
+Line    Label    Mnemonic    operand    counter
+1       -        read        N          0
+2       -        load        zero       2
+3       -        store       count      4
+4       -        store       sum        6
+5       loop     read        x          8
+6       -        load        x          10
+7       -        add         sum        12
+8       -        store       sum        14
+9       -        load        count      16
+10      -        add         one        18
+11      -        store       count      20
+12      -        sub         N          22
+13      -        jz          outer      24
+14      -        jmp         loop       26
+15      outer    write       sum        28
+16      -        stop        -          29
+17      -        endp        -          30
+18      -        zero        const      31
+19      -        one         const      32
+20      -        sum         db         33
+21      -        count       db         34
+22      -        N           db         35
+23      -        x           db         36
+24      -        end
+
